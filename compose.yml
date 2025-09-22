@@ -9,7 +9,7 @@ services:
 
  application:
    container_name: appcontainer
-   image: appimage
+   image: projectimage
    ports:
      - "1234:8080"
    depends_on:
