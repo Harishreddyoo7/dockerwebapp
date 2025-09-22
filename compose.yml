@@ -2,6 +2,7 @@ version: "3.8"
 
 services:
   devopsdb:
+    container_name: devopsdb
     image: dbimage
     ports:
       - "3306:3306"
@@ -11,6 +12,7 @@ services:
         condition: on-failure
 
   application:
+    container_name: appcontainer
     image: projectimage
     ports:
       - "1234:8080"
